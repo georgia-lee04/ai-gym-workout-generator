@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+   
+    <title>AI Workout Plan Generator</title>
+  </head>
+  <body>
+    <div class="container md">
+      <header>
+        <h1>AI Gym Workout Generator</h1>
+      </header>
+
+      <main>
+        <form id="workout-plan-form" class="workout-form">
+          <input
+            type="text"
+            placeholder="Enter the focus of your workout..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <small class="example">i.e Beginner Leg Day, Advanced Upper Body, Back Workout etc.</small>
+    </div>
+
+        <div class="generator-output hidden" id="generator-output"></div>
+
+      </main>
+
+   
+    <footer>
+      This AI project was coded by
+      <a href="https://github.com/georgia-lee04" target="_blank">Georgia Lee</a>
+      and is open-sourced on
+      <a
+        href="https://github.com/georgia-lee04/AI-workout-plan-generator"
+        target="_blank"
+        >GitHub</a
+      >
+      and hosted on
+      <a href="https://ai-workout-plan-generator.netlify.app/" target="_blank"
+        >Netlify</a
+      >
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
